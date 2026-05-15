@@ -1,103 +1,52 @@
-<h1 align="center">💳 Credit Risk Classification System</h1>
-<h3 align="center">Machine Learning for Financial Risk Analysis</h3>
+# 💳 Credit Customers Risk Analysis
 
-<hr/>
+A robust Machine Learning system for financial risk management. This project classifies bank customers into "Good" or "Bad" credit risks based on personal and financial profiles.
 
-<h2>🚀 Project Overview</h2>
-<p>
-This project presents a Machine Learning solution for credit risk classification 
-based on customer financial attributes.
-</p>
+## 🚀 Features
+*   **Predictive Model**: High-accuracy Random Forest classifier.
+*   **Data Pipeline**: Automated handling of missing values and categorical encoding.
+*   **FastAPI Backend**: Real-time scoring API for credit decisions.
+*   **Streamlit Dashboard**: Interactive interface for customer profiling and risk evaluation.
 
-<p>
-The objective is to build a predictive model capable of identifying whether a 
-customer represents a low-risk or high-risk credit profile.
-</p>
+## 🏗️ Structure
+```text
+├── train.py          # Data preprocessing and model training
+├── app.py            # FastAPI scoring service
+├── ui.py             # Streamlit management dashboard
+├── requirements.txt  # Dependencies
+├── model.pkl         # Trained model
+└── encoders.pkl      # Categorical encoders
+```
 
-<hr/>
+## 🛠️ Installation
 
-<h2>📊 Dataset</h2>
-<p>
-The dataset contains structured financial and customer-related features 
-used to assess creditworthiness.
-</p>
+1. Clone:
+```bash
+git clone https://github.com/mstfyshrqawy520-alt/credit-customers-risk-analysis.git
+cd credit-customers-risk-analysis
+```
 
-<ul>
-<li>Customer demographic data</li>
-<li>Financial behavior attributes</li>
-<li>Credit-related variables</li>
-</ul>
-
-<hr/>
-
-<h2>🧠 Machine Learning Pipeline</h2>
-<ul>
-<li>Data Cleaning</li>
-<li>Handling Missing Values</li>
-<li>Feature Engineering</li>
-<li>Feature Scaling</li>
-<li>Model Training</li>
-<li>Model Evaluation</li>
-</ul>
-
-<hr/>
-
-<h2>📈 Evaluation Metrics</h2>
-<ul>
-<li>Accuracy</li>
-<li>Precision</li>
-<li>Recall</li>
-<li>F1-Score</li>
-<li>Confusion Matrix</li>
-</ul>
-
-<hr/>
-
-<h2>📂 Project Structure</h2>
-
-<pre>
-credit-risk-classification-ml/
-│
-├── credit_customers.csv
-├── credit_customers.ipynb
-├── README.md
-└── requirements.txt
-</pre>
-
-<hr/>
-
-<h2>⚙️ Installation</h2>
-
-<pre>
-git clone &lt;repository-link&gt;
-cd credit-risk-classification-ml
+2. Install:
+```bash
 pip install -r requirements.txt
-jupyter notebook
-</pre>
+```
 
-<hr/>
+## 🚦 How to Run
 
-<h2>🛠 Technology Stack</h2>
-<ul>
-<li>Python</li>
-<li>Scikit-learn</li>
-<li>Pandas</li>
-<li>NumPy</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-</ul>
+### 1. Training
+```bash
+python train.py
+```
 
-<hr/>
+### 2. Backend
+```bash
+uvicorn app:app --reload
+```
 
-<h2>💡 Engineering Highlights</h2>
-<ul>
-<li>Structured financial data modeling</li>
-<li>Risk classification approach</li>
-<li>Real-world business application</li>
-<li>Scalable ML workflow</li>
-</ul>
+### 3. Frontend
+```bash
+streamlit run ui.py
+```
 
-<hr/>
-
-<h3 align="center">👨‍💻 Developed by Mostafa Sharqawy</h3>
-<p align="center">AI Engineer | Machine Learning | Financial ML</p>
+---
+Developed by **Mostafa Elsharqawi**
