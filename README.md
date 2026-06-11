@@ -22,7 +22,7 @@ A robust Machine Learning system for financial risk management. This project cla
 
 1. Clone:
 ```bash
-git clone https://github.com/mstfyshrqawy520-alt/credit-customers-risk-analysis.git
+git clone https://github.com/abdelkree5/credit-customers-risk-analysis.git
 cd credit-customers-risk-analysis
 ```
 
@@ -49,4 +49,4 @@ streamlit run ui.py
 ```
 
 ---
-Developed by **Mostafa Elsharqawi**
+Developed by **abdelkreem abdelhaleem frahat**
